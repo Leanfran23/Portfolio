@@ -5,13 +5,43 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-<!--        <link rel="icon" href="images/Captura de Pantalla 2022-06-19 a la(s) 14.39.51.png">-->
-
-        <title>LeanFran Portfolio</title>
-        <h1>My Portfolio (prueba para Git)(Prueba nro 2)</h1>
+        <title>leanFran Portfolio</title>
+        <div class="music">
+            <img src="images/play.png" id="icon">
+        </div>
+            
+            <h1>
+                Hola<span>!</span>
+                <br>Soy <div class="ele">L</div>                        ..                     eandro<span>,</span></br>
+                Web Developer<span>.</span>
+        </h1>
+        <h2>
+            <p class="subtitle">
+                FrontEnd developer / Systems Analyst
+            </p>
+        </h2>
+     
         <div class="box-face">
             <!-- <img class="cara" src="images/Captura de Pantalla 2022-06-19 a la(s) 14.40.18.png" alt="fachero"> -->
         </div>
+
+        <audio id="mySong"> 
+            <source src="audio/Miss Monique - TechnoProgressive House DJ Mix.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            icon.onclick = function(){
+                if(mySong.paused){
+                    mySong.play();
+                    icon.src = "images/pause.png";
+                }else{
+                    mySong.pause();
+                    icon.src = "images/play.png";
+                }
+            } 
+        </script>
+    <h3>
+        Sobre mi
+    </h3>
         <div class="presentation-box">
             <p class="presentation">Como andan renacuajos? 
                 Mi nombre es Leandro Franco, soy Analista de Sistemas. Actualmente estoy realizando mi TFI para recibirme de Licenciado en Sistemas.
@@ -21,10 +51,21 @@
         </div>
     </head>
 
+
+
+
     <body>
+        <h3>
+            Conocimientos
+        </h3>  
+        <div class="presentation-box">
+        <p class="presentation">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora perspiciatis, animi, eligendi beatae voluptatum neque natus eaque laudantium quo minus, similique recusandae? Distinctio eum quibusdam eligendi, eos deserunt laudantium.
+        </p>
+        </div>
         <header id="header" class="header">
             <div class="container">
-                <img class="item-brain" src="images/brain.png">
+                <img class="item-brain" src="images/92aYr-brain-clipart.svg">
                 
                     <img class="item1" src="images/JavaScript.png"> 
                     <img class="item2" src="images/Top-Node.js-development-trends-for-Node.js-software-developers-in-2022.jpg">
@@ -34,6 +75,15 @@
                     <img class="item6" src="images/bootstrap.jpeg">
                 
             </div>
+
+            <h3>
+                Proyectos
+            </h3>  
+            <div class="presentation-box">
+            <p class="presentation">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora perspiciatis, animi, eligendi beatae voluptatum neque natus eaque laudantium quo minus, similique recusandae? Distinctio eum quibusdam eligendi, eos deserunt laudantium.
+            </p>
+            </div>
         </header>
         <a href="#modal" class="cta">Contactame</a>
         <section id="modal" class="modal">
@@ -41,16 +91,18 @@
                 <figure class="modal_picture">
                     <img src="images/yo2.png" class="modal_img">
                 </figure>
-                
-                <h2 class="modal_title">Escríbeme!</h2>
-                    <span class="modal_title modal_title--bold">Lean</span>
+                <h3 class="modal_title">Contáctame!</h3>
                 <form action="#" autocomplete="off">
-                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
-                    <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">
-                    <textarea name="mensaje" placeholder="Coloca tu mensaje"></textarea>
+                    <div>
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo">
+                        <input type="email" name="email" placeholder="Ingresa tu correo" class="campo">   
+                    </div>
+                    <div>
+                        <textarea name="mensaje" placeholder="Coloca tu mensaje"></textarea>
+                    </div>
                     <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
                 </form>
-                     <a href="#header" class="modal_close">Contactar</a>
+                <a href="#header" class="modal_close">Contactar</a>
             </div>
         </section>
     </body>
